@@ -1,11 +1,11 @@
 var app = new Vue({
     el: '#app',
     data: {
-      cities_list: [], 
-      info: {}, 
+      cities_list: [],
+      info: {},
       actions: [],
-      city_name: 'Paris'
-    }, 
+      city_name: 'Singapore'
+    },
     created: function() {
       fetch("https://ync.yenter.io/get_info/" + this.city_name).then((resp) => {
         return resp.json()
@@ -16,4 +16,3 @@ var app = new Vue({
       })
     }
   })
-  
