@@ -193,3 +193,6 @@ html, body {
 h1{
 	font-size:4rem !important;
 }
+.imagesection{
+	border:1px solid silver;
+}
