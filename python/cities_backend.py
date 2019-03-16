@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 import pandas as pd
 import numpy as np
 import pickle
@@ -9,6 +10,7 @@ import json
 #nlp = spacy.load("en_core_web_lg")
 
 app = Flask(__name__)
+CORS(app)
 
 commitments = pd.read_pickle("commitments_translated.pkl")
 commitments = commitments[commitments.entity_type == 'City']
