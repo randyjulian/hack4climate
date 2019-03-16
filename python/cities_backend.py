@@ -108,9 +108,10 @@ def get_city_info(city):
         for pair in keywords:
             for otherPair in otherKeywords:
                 if pair['word'] == otherPair['word']:
-                    keywordScore += pair['score'] * otherPair['score']
+                    keywordScore += float(pair['score'] * otherPair['score'])
         if keywordScore > 0:
-            partnerActionCities.append([otherCity, keywordScore, sorted(otherKeywords, key=lambda x: -x['score'])[:10]])
+            otherKeywords = [x['word'] for x in sorted(otherKeywords, key=lambda x: -x['score'])]
+            partnerActionCities.append([otherCity, float(keywordScore), otherKeywords[:10]])
     
     results['partnerActionCities'] = sorted(partnerActionCities, key=lambda x: -x[1])[:10]
 
