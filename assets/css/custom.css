@@ -192,3 +192,7 @@ body {
 .aboutblock{
 	text-align:center !important;
 }
+
+html {
+	overflow-x:hidden !important;
+}
