@@ -59,13 +59,19 @@
 						<li v-for="(action, index) in info.actions_keywords">{{action['word']}}</li>
 					</ol>
 					<h3>Action partner cities:</h3>
-					<div v-for="(city, index) in info.partnerActionCities">
-						<h4>{{city[0]}}</h4>
-
-					<ul>
-						<li v-for='(word, i) in city[2]'>{{word}}</li>
-					</ul>
-					</div>
+					<table>
+						<tbody>
+							<tr>
+								<td v-for="(city, index) in info.partnerActionCities.slice(1, 6)">
+									<h4>{{city[0]}}</h4>
+						
+									<ul>
+										<li v-for='(word, i) in city[2]'>{{word}}</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 				</article>
 

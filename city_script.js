@@ -4,7 +4,7 @@ var app = new Vue({
       cities_list: [], 
       info: {}, 
       actions: [],
-      city_name: 'Singapore'
+      city_name: 'Paris'
     }, 
     created: function() {
       fetch("https://ync.yenter.io/get_info/" + this.city_name).then((resp) => {
