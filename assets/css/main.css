@@ -3290,7 +3290,7 @@ table.alt tbody tr td {
 }
 
 #intro a {
-	color: white;
+	color: white !important;
 	border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 
