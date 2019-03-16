@@ -9,25 +9,14 @@
 	<link rel="stylesheet" href="assets/css/custom.css" />
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-	<canvas id="nokey" width="800" height="100vh">
-			Your Browser Don't Support Canvas, Please Download Chrome ^_^``
-	</canvas>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body class="is-preload">
 
 
 	<!-- Wrapper -->
 	<div id="wrapper" class="fade-in">
-
-		<!-- Intro -->
-		<div id="intro">
-			<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-			<h1>Attributing Responsibility</h1>
-			<ul class="actions">
-				<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-			</ul>
-		</div>
-
 		<!-- Header -->
 		<header id="header">
 			<a href="index.html" class="logo icon fa-home"></a>
@@ -38,9 +27,9 @@
 			<ul class="links">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="sector.html">sector</a></li>
-				<li class="active"><a href="country.html">Country</a></li>
+				<li><a href="country.html">Country</a></li>
 				<li><a href="city.html">Cities</a></li>
-				<li><a href="about.html">About</a></li>
+				<li class="active"><a href="about.html">About</a></li>
 
 			</ul>
 			<ul class="icons">
@@ -56,58 +45,23 @@
 				<header class="major" style="margin:0;">
 
 					<span class="date"><div id="para1"></div></span>
-					<h2>Countries</h2>
+					<h2>About</h2>
 					<p class="aboutblock">YaleNUS Hackathon | Team Blizzard</p>
+					<h2> 1st Place in Data Science Category </h2>
+
 						</header>
-						<!-- <ul class="actions special">
-						<li><a href="personal.html" class="button large primary">Find Out More</a></li>
-					</ul> -->
-
+				<img src ="images/yalehack.png" width=100%/>
 				</article>
-
-			<h2>Carbon Emissions since 2000</h2>
-
-			<img  width = "100%" height="auto" src  = "line.PNG"/>
-
-			<img   src = "countrybycarbon.png" width="100%"/>
-			<h2>Bigger actors bigger actions?</h2>
-
-				<iframe width="100%" height="600px" frameborder="0" scrolling="no" src="//plot.ly/~nicklausong/13.embed"></iframe>
-				<p>
-		     Climate change is a pressing issue, and it is critical that stakeholders
-		     put in the effort to implement change. In this graph, we visualize countries'
-		     size and the corresponding number of initiatives that they have adopted. Note that
-		     all axes are scaled logarithmically. It is heartening that there is a correlation between
-		     larger emissions, gdp size, and the number of initiatives taken up. This means that larger
-		     countries are putting in the effort to reduce their carbon emissions. However, we can see some
-		     laggards in the world. Seeing by region, we can see the efforts in different regions and
-		     gain understanding that different areas need to put in more effort.
-		    </p>
-				<!-- Posts -->
 				<div class="row rowpad">
 						<div class="col-4 col-6-small navhalfrow">
-							<a href="sector.html" class="button primary fit workbutton icon fa-arrow-left" style="color:white !important;"> &nbsp Sector</a>
+							<a href="city.html" class="button primary fit workbutton icon fa-arrow-left" style="color:white !important;"> &nbsp City</a>
 						</div>
 						<div class="col-4 col-0-small blank"></div>
 						<div class="col-4 col-6-small navhalfrow">
-							<a href="city.html" class="button primary fit workbutton" style="color:white !important;"> City &nbsp  <span class="icon fa-arrow-right"/></a>
+							<a href="index.html" class="button primary fit workbutton" style="color:white !important;"> Home &nbsp  <span class="icon fa-arrow-right"/></a>
 						</div>
 					</div>
-					<!-- Footer -->
-					<!-- <footer>
-					<div class="pagination">
-					<a href="#" class="previous">Prev</a>
-					<a href="#" class="page active">1</a>
-					<a href="#" class="page">2</a>
-					<a href="#" class="page">3</a>
-					<span class="extra">&hellip;</span>
-					<a href="#" class="next">Next</a>
-				</div>
-			</footer> -->
-
 		</div>
-
-		<!-- Footer -->
 
 	</div>
 
@@ -166,5 +120,11 @@
 		  document.querySelector('svg').appendChild(el);
 		}
 		</script>
+		<script src='city_script.js'></script>
 </body>
 </html>
+<style>
+li {
+	text-align:left !important;
+}
+</style>

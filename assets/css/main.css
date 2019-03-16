@@ -3439,7 +3439,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 	#intro {
 		padding: 3rem 2rem 1rem 2rem ;
-		min-height: 90vh;
+		min-height: 60vh;
 	}
 
 	#intro h1 {
@@ -3462,7 +3462,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 /* Header */
 
 #header {
-	color: black;
+	color: white;
 	-moz-align-items: center;
 	-webkit-align-items: center;
 	-ms-align-items: center;
@@ -3492,11 +3492,11 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #header input, #header select, #header textarea {
-	color: black;
+	color: white;
 }
 
 #header a {
-	color: black;
+	color: white;
 	border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -3506,7 +3506,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #header strong, #header b {
-	color: black;
+	color: white;
 }
 
 #header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {

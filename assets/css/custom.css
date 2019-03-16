@@ -48,6 +48,9 @@
 	.desktoponly{
 		display:none;
 	}
+	.col-xs-12{
+		width:88% !important;
+	}
 }
 @media screen and (min-width: 800px) {
 	svg {
@@ -102,6 +105,10 @@ h3{
 		border:1px solid lightgrey;
 		max-height: 340px;
 	}
+	.minibox h2{
+	  font-size:30px;
+		color:#B69545;
+	}
 }
 @media all and (max-width: 600px){
 	.captissmobile{
@@ -121,6 +128,14 @@ h3{
 	}
 	#intro h1{
 		font-size: 2.5rem !important;
+	}
+	.minibox{
+		height:70px;
+		margin-bottom:20px;
+	}
+	.specialh2 a{
+		font-size:1rem !important;
+		color:#B69545 !important;
 	}
 }
 
@@ -163,6 +178,9 @@ body {
 	padding-bottom:4rem;
 	margin-top:-250px !important;
 }
+.minibox{
+	height:200px;
+}
 }
 
 .bluerow a:hover {
@@ -170,4 +188,7 @@ body {
 }
 .bluerow{
 	padding-bottom:4rem;
+}
+.aboutblock{
+	text-align:center !important;
 }
