@@ -12,30 +12,13 @@
 	<canvas id="nokey" width="800" height="100vh">
 			Your Browser Don't Support Canvas, Please Download Chrome ^_^``
 	</canvas>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body class="is-preload">
 
 
 	<!-- Wrapper -->
 	<div id="wrapper" class="fade-in">
-
-		<!-- Intro -->
-		<div id="intro">
-			<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-			<h1>Attributing Responsibility</h1>
-			<h2><span
-			     class="txt-rotate"
-			     data-period="2000"
-			     data-rotate='[ "A Genuine Climate Action", "Save the Earth, Save ourselves", "The earth is what we all have in common"]'></span></h2>
-
-			<h3> <i class="icon fas fa-globe"> </i>Team Blizzard <i class="icon fas fa-globe"></i></h3>
-			<!-- <h1>Nicholas Wan</h1>
-			<p>Aspiring Healthcare Analyst <br> Second Year Business Analytics Undergraduate</p> -->
-			<ul class="actions">
-				<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-			</ul>
-		</div>
-
 		<!-- Header -->
 		<header id="header">
 			<a href="index" class="logo icon fa-home"></a>
@@ -65,30 +48,12 @@
 					<h2>Cities</h2>
 					<p class="aboutblock">YaleNUS Hackathon | Team Blizzard</p>
 						</header>
-						<!-- <ul class="actions special">
-						<li><a href="personal.html" class="button large primary">Find Out More</a></li>
-					</ul> -->
-
-				</article>
-
-				<!-- Posts -->
-					<div class="row">
-						<div class="col-2 col-0-small"></div>
-						<div class="col-8 col-12-small navrow">
-							<a href="experience" class="button primary fit workbutton"> Industries &nbsp <span class="icon fa-arrow-right"/></a>
-						</div>
-					</div>
-					<!-- Footer -->
-					<!-- <footer>
-					<div class="pagination">
-					<a href="#" class="previous">Prev</a>
-					<a href="#" class="page active">1</a>
-					<a href="#" class="page">2</a>
-					<a href="#" class="page">3</a>
-					<span class="extra">&hellip;</span>
-					<a href="#" class="next">Next</a>
+				<div id='app'>
+					<h2>Viewing: {{city_name}}</h2>
+					Actions:
+					<div v-for="(action, index) in actions">{{action}}</div>
 				</div>
-			</footer> -->
+				</article>
 
 		</div>
 
@@ -161,5 +126,6 @@
 		  document.querySelector('svg').appendChild(el);
 		}
 		</script>
+		<script src='city_script.js'></script>
 </body>
 </html>
