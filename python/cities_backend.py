@@ -1,12 +1,14 @@
-from flask import Flask
+from flask import Flask, jsonify
 import pandas as pd
 import numpy as np
 import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 import json
 
-import spacy
-nlp = spacy.load("en_core_web_lg")
+#import spacy
+#nlp = spacy.load("en_core_web_lg")
+
+app = Flask(__name__)
 
 commitments = pd.read_pickle("commitments_translated.pkl")
 commitments = commitments[commitments.entity_type == 'City']
@@ -21,14 +23,14 @@ commitment_info_keys = ['action_co2_reduction', 'action_end_year',
 
 commitment_info_keys = [x for x in commitments.columns if commitments[x].dtype == 'float64']
 
-def drop_useless_words(text):
-    acceptedTokens = {'NN', 'NNS', 'JJ', 'VBG', 'VBP'}
-    doc = nlp(text)
-    results = []
-    for token in doc:
-        if token.tag_ in acceptedTokens:
-            results.append(token.lemma_)
-    return ' '.join(results)
+#def drop_useless_words(text):
+#    acceptedTokens = {'NN', 'NNS', 'JJ', 'VBG', 'VBP'}
+#    doc = nlp(text)
+#    results = []
+#    for token in doc:
+#        if token.tag_ in acceptedTokens:
+#            results.append(token.lemma_)
+#    return ' '.join(results)
 
 #actions_corpus = [drop_useless_words(x) for x in commitments.action_description_en.dropna()]
 #with open("actions_corpus.pkl", "wb") as f:
@@ -39,11 +41,16 @@ vectorizer = TfidfVectorizer()
 vectorizer.fit(actions_corpus)
 city_actions_keywords = {}
 
+@app.route("/get_cities/")
 def get_cities():
-    return cities
+    return jsonify(cities)
 
 def get_commitments(city):
     return commitments[commitments.name == city]
+
+@app.route("/get_commitments/<city>")
+def get_commitments_endpoint(city):
+    return jsonify(get_commitments(city))
 
 def clean(x):
     out = x.replace("\n", " ").replace("\r", " ").replace("\\", "")
@@ -73,6 +80,10 @@ def clean(x):
 with open("city_actions_keywords.pkl", "rb") as f:
     city_actions_keywords = pickle.load(f)
 
+#with open("wiki_city_scores.pkl", "rb") as f:
+#    wiki_city_scores = pickle.load(f)
+
+@app.route("/get_info/<city>")
 def get_city_info(city):
     results = {}
     results['info'] = {}
@@ -100,5 +111,19 @@ def get_city_info(city):
             partnerActionCities.append([otherCity, keywordScore, sorted(otherKeywords, key=lambda x: -x['score'])[:10]])
     
     results['partnerActionCities'] = sorted(partnerActionCities, key=lambda x: -x[1])[:10]
+
+#    city_wiki = wiki_city_scores.loc[city]
+#    city_wikis = wiki_city_scores.mul(city_wiki)
+#    city_wikis['sum'] = wiki_city_scores.sum(axis=1)
+#    city_wikis = city_wikis[city_wikis['sum'] > 0].sort_values('sum', ascending=False)
+#    
+#    results['similarCities'] = []
+#    similarCities = city_wikis.index[:10]
+#    for city in similarCities:
+#        words = city_wikis.loc['Mexico City'].sort_values(ascending=False)[1:21]
+#        results['similarCities'].append([city, words])
     
-    return results
+    return jsonify(results)
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port='1355')
