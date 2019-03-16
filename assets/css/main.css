@@ -2223,7 +2223,7 @@ button.primary,
 .button.primary {
 	background-color: #212931;
 	box-shadow: none;
-	color: #ffffff !important;
+	color: black !important;
 }
 
 input[type="submit"].primary:hover,
@@ -2491,7 +2491,7 @@ select {
 }
 
 select option {
-	background-color: #ffffff;
+	background-color: black;
 	color: #212931;
 }
 
@@ -2513,7 +2513,7 @@ input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
 	background-color: #212931;
 	border-color: #212931;
-	color: #ffffff;
+	color: black;
 }
 
 input[type="checkbox"]:focus + label:before,
@@ -3242,9 +3242,9 @@ table.alt tbody tr td {
 	width: 100%;
 }
 
-body.is-preload #wrapper.fade-in:before {
+/* body.is-preload #wrapper.fade-in:before {
 	opacity: 1;
-}
+} */
 
 @media screen and (orientation: portrait) {
 
@@ -3257,8 +3257,7 @@ body.is-preload #wrapper.fade-in:before {
 /* Intro */
 
 #intro {
-	color: #ffffff;
-	padding: 8rem 4rem 6rem 4rem ;
+	color: black;
 	-moz-align-items: center;
 	-webkit-align-items: center;
 	-ms-align-items: center;
@@ -3282,16 +3281,16 @@ body.is-preload #wrapper.fade-in:before {
 	position: relative;
 	cursor: default;
 	text-align: center;
-	z-index: 1;
+	z-index: 2;
 	min-height: 100vh;
 }
 
 #intro input, #intro select, #intro textarea {
-	color: #ffffff;
+	color: black;
 }
 
 #intro a {
-	color: #ffffff;
+	color: black;
 	border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -3301,24 +3300,24 @@ body.is-preload #wrapper.fade-in:before {
 }
 
 #intro strong, #intro b {
-	color: #ffffff;
+	color: black;
 }
 
 #intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
-	color: #ffffff;
+	color: black;
 }
 
 #intro blockquote {
-	border-left-color: #ffffff;
+	border-left-color: black;
 }
 
 #intro code {
 	background: rgba(255, 255, 255, 0.075);
-	border-color: #ffffff;
+	border-color: black;
 }
 
 #intro hr {
-	border-bottom-color: #ffffff;
+	border-bottom-color: black;
 }
 
 #intro input[type="submit"],
@@ -3327,8 +3326,8 @@ body.is-preload #wrapper.fade-in:before {
 #intro button,
 #intro .button {
 	background-color: transparent;
-	box-shadow: inset 0 0 0 2px #ffffff;
-	color: #ffffff !important;
+	box-shadow: inset 0 0 0 2px black;
+	color: black !important;
 }
 
 #intro input[type="submit"]:hover,
@@ -3345,7 +3344,7 @@ body.is-preload #wrapper.fade-in:before {
 #intro input[type="button"].primary,
 #intro button.primary,
 #intro .button.primary {
-	background-color: #ffffff;
+	background-color: black;
 	box-shadow: none;
 	color: #1e252d !important;
 }
@@ -3358,10 +3357,7 @@ body.is-preload #wrapper.fade-in:before {
 	background-color: #18bfef;
 }
 
-#intro h1 {
-	font-size: 5rem;
-	line-height: 1;
-}
+
 
 #intro p {
 	font-size: 1.25rem;
@@ -3406,7 +3402,7 @@ body.is-preload #wrapper.fade-in:before {
 	visibility: visible;
 }
 
-body.is-preload #intro {
+/* body.is-preload #intro {
 	-moz-transform: translateY(2rem);
 	-webkit-transform: translateY(2rem);
 	-ms-transform: translateY(2rem);
@@ -3420,7 +3416,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 	-ms-transform: translateY(4rem);
 	transform: translateY(4rem);
 	opacity: 0;
-}
+} */
 
 @media screen and (max-width: 980px) {
 
@@ -3466,7 +3462,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 /* Header */
 
 #header {
-	color: #ffffff;
+	color: black;
 	-moz-align-items: center;
 	-webkit-align-items: center;
 	-ms-align-items: center;
@@ -3496,38 +3492,38 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #header input, #header select, #header textarea {
-	color: #ffffff;
+	color: black;
 }
 
 #header a {
-	color: #ffffff;
+	color: black;
 	border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 
 #header a:hover {
 	border-bottom-color: transparent;
-	color: #18bfef !important;
+	color: #B69545 !important;
 }
 
 #header strong, #header b {
-	color: #ffffff;
+	color: black;
 }
 
 #header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
-	color: #ffffff;
+	color: black;
 }
 
 #header blockquote {
-	border-left-color: #ffffff;
+	border-left-color: black;
 }
 
 #header code {
 	background: rgba(255, 255, 255, 0.075);
-	border-color: #ffffff;
+	border-color: black;
 }
 
 #header hr {
-	border-bottom-color: #ffffff;
+	border-bottom-color: black;
 }
 
 #header .logo {
@@ -3537,7 +3533,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 	transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
 	pointer-events: auto;
 	border-style: solid;
-	border-color: #ffffff;
+	border-color: black;
 	border-width: 5px !important;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 2.25rem;
@@ -3579,7 +3575,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 /* Nav */
 
 #nav {
-	color: #ffffff;
+	color: black;
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: -ms-flex;
@@ -3588,7 +3584,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 	-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 	-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 	transition: transform 1s ease, opacity 1s ease;
-	background: rgba(255, 255, 255, 0.175);
+	background: rgba(136, 136, 136, 0.275);
 	height: 4rem;
 	line-height: 4rem;
 	margin: -4rem auto 0 auto;
@@ -3601,7 +3597,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #nav ul.divided li {
-	border-top-color: #ffffff;
+	border-top-color: black;
 }
 
 #nav ul.icons li a.icon:hover:before {
@@ -3609,7 +3605,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #nav ul.icons.alt li .icon:before {
-	box-shadow: inset 0 0 0 2px #ffffff;
+	box-shadow: inset 0 0 0 2px black;
 }
 
 #nav ul.icons.alt li a.icon:hover:before {
@@ -3617,11 +3613,11 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #nav input, #nav select, #nav textarea {
-	color: #ffffff;
+	color: black;
 }
 
 #nav a {
-	color: #ffffff;
+	color: black;
 	border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -3631,24 +3627,24 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #nav strong, #nav b {
-	color: #ffffff;
+	color: black;
 }
 
 #nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
-	color: #ffffff;
+	color: black;
 }
 
 #nav blockquote {
-	border-left-color: #ffffff;
+	border-left-color: black;
 }
 
 #nav code {
 	background: rgba(255, 255, 255, 0.075);
-	border-color: #ffffff;
+	border-color: black;
 }
 
 #nav hr {
-	border-bottom-color: #ffffff;
+	border-bottom-color: black;
 }
 
 #nav ul.links {
@@ -3695,7 +3691,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #nav ul.links li.active {
-	background-color: #ffffff;
+	background-color: white;
 }
 
 #nav ul.links li.active a {
@@ -3729,7 +3725,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 /* Main */
 
 #main {
-	background-color: #ffffff;
+	background-color: white;
 	position: relative;
 	margin: 0 auto;
 	width: calc(100% - 4rem);
@@ -4358,7 +4354,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #copyright {
-	color: #ffffff;
+	color: black;
 	position: relative;
 	color: rgba(255, 255, 255, 0.25);
 	cursor: default;
@@ -4376,11 +4372,11 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #copyright input, #copyright select, #copyright textarea {
-	color: #ffffff;
+	color: black;
 }
 
 #copyright a {
-	color: #ffffff;
+	color: black;
 	border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -4390,24 +4386,24 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #copyright strong, #copyright b {
-	color: #ffffff;
+	color: black;
 }
 
 #copyright h1, #copyright h2, #copyright h3, #copyright h4, #copyright h5, #copyright h6 {
-	color: #ffffff;
+	color: black;
 }
 
 #copyright blockquote {
-	border-left-color: #ffffff;
+	border-left-color: black;
 }
 
 #copyright code {
 	background: rgba(255, 255, 255, 0.075);
-	border-color: #ffffff;
+	border-color: black;
 }
 
 #copyright hr {
-	border-bottom-color: #ffffff;
+	border-bottom-color: black;
 }
 
 #copyright a {
@@ -4471,7 +4467,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 	top: 0.75rem;
 	right: 0.75rem;
 	border: 0;
-	color: #ffffff;
+	color: black;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 0.9rem;
 	font-weight: 900;
@@ -4502,7 +4498,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #navPanelToggle.alt:hover {
-	background-color: #ffffff;
+	background-color: black;
 }
 
 @media screen and (max-width: 980px) {
@@ -4533,7 +4529,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 	transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 	display: none;
 	-webkit-overflow-scrolling: touch;
-	background: #ffffff;
+	background: black;
 	box-shadow: none;
 	color: #212931;
 	height: 100%;
