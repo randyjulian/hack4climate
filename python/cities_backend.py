@@ -92,7 +92,7 @@ def get_city_info(city):
     results['actions'] = {}
     subset = get_commitments(city)
     for key in commitment_info_keys:
-        results['info'][key] = subset[key].max()
+        results['info'][key] = float(subset[key].max())
     results['actions'] = list(clean(x) for x in subset.action_description_en.dropna())
     keywords = json.loads(city_actions_keywords[city])
     results['actions_keywords'] = keywords
