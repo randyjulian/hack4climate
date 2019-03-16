@@ -295,7 +295,7 @@ a {
 
 a:hover {
 	border-bottom-color: transparent;
-	color: #18bfef !important;
+	color: #B69545 !important;
 }
 
 strong, b {
@@ -2212,8 +2212,8 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-	box-shadow: inset 0 0 0 2px #18bfef;
-	color: #18bfef !important;
+	box-shadow: inset 0 0 0 2px #B69545;
+	color: #B69545 !important;
 }
 
 input[type="submit"].primary,
@@ -2231,7 +2231,7 @@ input[type="reset"].primary:hover,
 input[type="button"].primary:hover,
 button.primary:hover,
 .button.primary:hover {
-	background-color: #18bfef;
+	background-color: #B69545;
 }
 
 /* Form */
@@ -2483,7 +2483,7 @@ input[type="password"]:focus,
 input[type="email"]:focus,
 select:focus,
 textarea:focus {
-	border-color: #18bfef;
+	border-color: #B69545;
 }
 
 select {
@@ -2518,7 +2518,7 @@ input[type="radio"]:checked + label:before {
 
 input[type="checkbox"]:focus + label:before,
 input[type="radio"]:focus + label:before {
-	border-color: #18bfef;
+	border-color: #B69545;
 }
 
 ::-webkit-input-placeholder {
@@ -2869,7 +2869,7 @@ ul.divided li {
 }
 
 ul.icons li a.icon:hover:before {
-	color: #18bfef;
+	color: #B69545;
 }
 
 ul.icons.alt li .icon:before {
@@ -2877,7 +2877,7 @@ ul.icons.alt li .icon:before {
 }
 
 ul.icons.alt li a.icon:hover:before {
-	box-shadow: inset 0 0 0 2px #18bfef;
+	box-shadow: inset 0 0 0 2px #B69545;
 }
 
 /* Section/Article */
@@ -3171,13 +3171,13 @@ table.alt tbody tr td {
 }
 
 .pagination a:hover {
-	color: #18bfef !important;
-	border-color: #18bfef;
+	color: #B69545 !important;
+	border-color: #B69545;
 	z-index: 1;
 }
 
 .pagination a:hover + a, .pagination a:hover + span {
-	border-left-color: #18bfef;
+	border-left-color: #B69545;
 }
 
 .pagination a.active {
@@ -3296,7 +3296,7 @@ table.alt tbody tr td {
 
 #intro a:hover {
 	border-bottom-color: transparent;
-	color: #18bfef !important;
+	color: #B69545 !important;
 }
 
 #intro strong, #intro b {
@@ -3335,8 +3335,8 @@ table.alt tbody tr td {
 #intro input[type="button"]:hover,
 #intro button:hover,
 #intro .button:hover {
-	box-shadow: inset 0 0 0 2px #18bfef;
-	color: #18bfef !important;
+	box-shadow: inset 0 0 0 2px #B69545;
+	color: #B69545 !important;
 }
 
 #intro input[type="submit"].primary,
@@ -3354,7 +3354,7 @@ table.alt tbody tr td {
 #intro input[type="button"].primary:hover,
 #intro button.primary:hover,
 #intro .button.primary:hover {
-	background-color: #18bfef;
+	background-color: #B69545;
 }
 
 
@@ -3546,8 +3546,8 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #header .logo:hover {
-	border-color: #18bfef !important;
-	color: #18bfef !important;
+	border-color: #B69545 !important;
+	color: #B69545 !important;
 }
 
 @media screen and (max-width: 980px) {
@@ -3584,7 +3584,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 	-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 	-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 	transition: transform 1s ease, opacity 1s ease;
-	background: rgba(136, 136, 136, 0.275);
+	background: rgba(255, 255, 255, 0.275);
 	height: 4rem;
 	line-height: 4rem;
 	margin: -4rem auto 0 auto;
@@ -3601,7 +3601,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #nav ul.icons li a.icon:hover:before {
-	color: #18bfef;
+	color: #B69545;
 }
 
 #nav ul.icons.alt li .icon:before {
@@ -3609,7 +3609,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #nav ul.icons.alt li a.icon:hover:before {
-	box-shadow: inset 0 0 0 2px #18bfef;
+	box-shadow: inset 0 0 0 2px #B69545;
 }
 
 #nav input, #nav select, #nav textarea {
@@ -3617,13 +3617,13 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #nav a {
-	color: black;
+	color: white;
 	border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 
 #nav a:hover {
 	border-bottom-color: transparent;
-	color: #18bfef !important;
+	color: #B69545 !important;
 }
 
 #nav strong, #nav b {
@@ -3686,8 +3686,9 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #nav ul.links li a:hover {
-	color: inherit !important;
+	color: #B69545 !important;
 	background-color: rgba(255, 255, 255, 0.1);
+
 }
 
 #nav ul.links li.active {
@@ -3699,7 +3700,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #nav ul.links li.active a:hover {
-	color: #18bfef !important;
+	color: #B69545 !important;
 }
 
 #nav ul.icons {
@@ -3945,7 +3946,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 #footer a:hover {
 	border-bottom-color: transparent;
-	color: #18bfef !important;
+	color: #B69545 !important;
 }
 
 #footer strong, #footer b {
@@ -3988,8 +3989,8 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 #footer input[type="button"]:hover,
 #footer button:hover,
 #footer .button:hover {
-	box-shadow: inset 0 0 0 2px #18bfef;
-	color: #18bfef !important;
+	box-shadow: inset 0 0 0 2px #B69545;
+	color: #B69545 !important;
 }
 
 #footer input[type="submit"].primary,
@@ -4007,7 +4008,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 #footer input[type="button"].primary:hover,
 #footer button.primary:hover,
 #footer .button.primary:hover {
-	background-color: #18bfef;
+	background-color: #B69545;
 }
 
 #footer label {
@@ -4027,7 +4028,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 #footer input[type="email"]:focus,
 #footer select:focus,
 #footer textarea:focus {
-	border-color: #18bfef;
+	border-color: #B69545;
 }
 
 #footer select {
@@ -4062,7 +4063,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 #footer input[type="checkbox"]:focus + label:before,
 #footer input[type="radio"]:focus + label:before {
-	border-color: #18bfef;
+	border-color: #B69545;
 }
 
 #footer ::-webkit-input-placeholder {
@@ -4090,7 +4091,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #footer ul.icons li a.icon:hover:before {
-	/* color: #18bfef; */
+	/* color: #B69545; */
 	color:white;
 }
 
@@ -4099,7 +4100,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #footer ul.icons.alt li a.icon:hover:before {
-	box-shadow: inset 0 0 0 2px #18bfef;
+	box-shadow: inset 0 0 0 2px #B69545;
 }
 
 #footer header.major .date:before, #footer header.major .date:after {
@@ -4139,13 +4140,13 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #footer .pagination a:hover {
-	color: #18bfef !important;
-	border-color: #18bfef;
+	color: #B69545 !important;
+	border-color: #B69545;
 	z-index: 1;
 }
 
 #footer .pagination a:hover + a, #footer .pagination a:hover + span {
-	border-left-color: #18bfef;
+	border-left-color: #B69545;
 }
 
 #footer .pagination a.active {
@@ -4382,7 +4383,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 #copyright a:hover {
 	border-bottom-color: transparent;
-	color: #18bfef !important;
+	color: #B69545 !important;
 }
 
 #copyright strong, #copyright b {
